@@ -1,0 +1,13 @@
+// -*- C++ -*-
+
+#pragma once
+
+#include <cstring>
+
+class command {
+   public:
+    short type;
+    char args[51];
+    enum { set_game, clear_board, cputime, genmove, play, quit };
+    void readFromStdin();
+};
