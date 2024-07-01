@@ -1,2 +1,2 @@
-# ΛΑΜΒΔΑ-ζΕΡΩ
+# Λ-Zero
 Blokus Engine
