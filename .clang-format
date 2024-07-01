@@ -1,0 +1,45 @@
+# Documentation:
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+
+BasedOnStyle: Google
+Language: Cpp
+
+ColumnLimit: 80
+
+IndentWidth: 4
+ContinuationIndentWidth: 4
+TabWidth: 8
+UseTab: Never
+
+AccessModifierOffset: -1
+
+IndentCaseLabels: false
+BreakBeforeBraces: Attach
+AlignEscapedNewlinesLeft: false
+AlignEscapedNewlines: DontAlign
+AllowShortBlocksOnASingleLine: Empty
+AllowShortFunctionsOnASingleLine: false
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortCaseLabelsOnASingleLine: true
+
+AlignTrailingComments: true
+SpacesBeforeTrailingComments: 1
+
+PenaltyReturnTypeOnItsOwnLine: 200
+AllowAllParametersOfDeclarationOnNextLine: false
+BinPackParameters: true
+BreakBeforeBinaryOperators: true
+BreakBeforeTernaryOperators: true
+AlwaysBreakAfterDefinitionReturnType: None
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: No
+AlwaysBreakTemplateDeclarations: No
+BinPackArguments: true
+PointerAlignment: Right
+SortIncludes: CaseInsensitive
+Cpp11BracedListStyle: true
+AlignConsecutiveMacros: AcrossEmptyLines
+IndentPPDirectives: AfterHash
+SpaceBeforeParens: ControlStatementsExceptControlMacros
+PPIndentWidth: 1
