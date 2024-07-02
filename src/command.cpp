@@ -1,6 +1,6 @@
 #include <iostream>
 using std::cin;
-#include "command"
+#include "command.hpp"
 
 inline void command::skipTo(char sep) {
     char ch = cin.get();

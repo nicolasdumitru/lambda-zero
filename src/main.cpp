@@ -1,4 +1,4 @@
-#include "command"
+#include "command.hpp"
 
 int main() {
     command cmd;
