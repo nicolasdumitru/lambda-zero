@@ -1,7 +1,7 @@
 #include "command.hpp"
 
 int main() {
-    command cmd;
+    Command cmd;
     cmd.readFromStdin();
     return 0;
 }

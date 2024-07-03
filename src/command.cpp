@@ -2,21 +2,21 @@
 using std::cin;
 #include "command.hpp"
 
-inline void command::skipTo(char sep) {
+inline void Command::skipTo(char sep) {
     char ch = cin.get();
     while (ch != sep)
         ch = cin.get();
 }
 
-inline void command::skipToNewline() {
+inline void Command::skipToNewline() {
     skipTo('\n');
 }
 
-inline void command::skipToArgs() {
+inline void Command::skipToArgs() {
     skipTo(' ');
 }
 
-inline void command::readArgs() {
+inline void Command::readArgs() {
     args_size = 0;
     args[args_size] = cin.get();
     while (args[args_size] != '\n') {
@@ -26,8 +26,8 @@ inline void command::readArgs() {
     args[args_size] = '\0';
 }
 
-void command::readFromStdin() {
-    // very minimal Pentobi GTP command processing
+void Command::readFromStdin() {
+    // very minimal Pentobi GTP Command processing
     char ch1, ch2;
     ch1 = cin.get();
     switch (ch1) {

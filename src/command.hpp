@@ -1,6 +1,6 @@
 #pragma once
 
-class command {
+class Command {
    private:
     inline void skipTo(char ch);
     inline void skipToNewline();

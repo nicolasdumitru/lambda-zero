@@ -14,7 +14,7 @@ set(CMAKE_CXX_FLAGS "-Wall -Wextra")
 set(CMAKE_CXX_FLAGS_RELEASE "-O2")
 
 set(SOURCES
-    src/command
+    src/command.hpp
     src/command.cpp
     src/main.cpp
 )
