@@ -1,7 +1,7 @@
 # Documentation:
 # https://clang.llvm.org/docs/ClangFormatStyleOptions.html
 
-BasedOnStyle: Google
+BasedOnStyle: LLVM
 Language: Cpp
 
 ColumnLimit: 80
@@ -11,7 +11,7 @@ ContinuationIndentWidth: 4
 TabWidth: 8
 UseTab: Never
 
-AccessModifierOffset: -1
+AccessModifierOffset: -4
 
 IndentCaseLabels: false
 BreakBeforeBraces: Attach
