@@ -1,7 +1,7 @@
 #include "constants.hpp"
 #include "shape.hpp"
 
-const Shape ALL_SHAPES[21] = {
+const Shape ALL_SHAPES[NUM_SHAPES] = {
     // clang-format off
     {
         "#"
