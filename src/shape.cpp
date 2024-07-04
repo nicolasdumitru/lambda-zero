@@ -54,7 +54,7 @@ void Shape::flip_vertically() {
         for (int i = 0; i < height / 2; i++) {
             aux = shape[i][j];
             shape[i][j] = shape[height - 1 - i][j];
-            shape[height - 1 - i][j] = shape[i][j];
+            shape[height - 1 - i][j] = aux;
         }
     }
 }

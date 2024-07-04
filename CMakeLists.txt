@@ -16,6 +16,10 @@ set(CMAKE_CXX_FLAGS_RELEASE "-O2")
 set(SOURCES
     src/command.hpp
     src/command.cpp
+    src/pieceset.hpp
+    src/pieceset.cpp
+    src/shape.hpp
+    src/shape.cpp
     src/main.cpp
 )
 
