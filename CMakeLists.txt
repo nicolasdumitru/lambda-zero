@@ -14,13 +14,15 @@ set(CMAKE_CXX_FLAGS "-Wall -Wextra")
 set(CMAKE_CXX_FLAGS_RELEASE "-O2")
 
 set(SOURCES
-    src/command.hpp
     src/command.cpp
-    src/pieceset.hpp
-    src/pieceset.cpp
-    src/shape.hpp
-    src/shape.cpp
+    src/command.hpp
+    src/constants.cpp
+    src/constants.hpp
     src/main.cpp
+    src/pieceset.cpp
+    src/pieceset.hpp
+    src/shape.cpp
+    src/shape.hpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
