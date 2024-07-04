@@ -9,4 +9,6 @@ public:
     short get_width();
     void transpose();
     void flip_vertically();
+    bool cmp(Shape other);
+    void print();
 };

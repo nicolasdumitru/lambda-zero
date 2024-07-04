@@ -1,34 +1,17 @@
 #include "shape.hpp"
+#include <iostream>
 
 short Shape::get_height() {
     int i = 0;
-    bool ok = true;
-    while (i < 5 && ok) {
+    while (i < 5 && shape[i][0])
         i++;
-        // clang-format off
-            ok = shape[i][0]
-                | shape[i][1]
-                | shape[i][2]
-                | shape[i][3]
-                | shape[i][4];
-        // clang-format on
-    }
     return i;
 }
 
 short Shape::get_width() {
     int i = 0;
-    bool ok = true;
-    while (i < 5 && ok) {
+    while (i < 5 && shape[0][i])
         i++;
-        // clang-format off
-            ok = shape[0][i]
-                | shape[1][i]
-                | shape[2][i]
-                | shape[3][i]
-                | shape[4][i];
-        // clang-format on
-    }
     return i;
 }
 
@@ -56,5 +39,30 @@ void Shape::flip_vertically() {
             shape[i][j] = shape[height - 1 - i][j];
             shape[height - 1 - i][j] = aux;
         }
+    }
+}
+
+bool Shape::cmp(Shape other) {
+    int i, j;
+    bool result = true;
+    i = 0;
+    while (i < 5 && result) {
+        j = 0;
+        while (j < 5 && shape[i][j] == other.shape[i][j])
+            j++;
+        if (j < 5)
+            result = false;
+        i++;
+    }
+    return result;
+}
+
+void Shape::print() {
+    int i, j;
+    for (i = 0; i < 5; i++) {
+        for (j = 0; j < 5; j++)
+            if (shape[i][j] != 0)
+                std::cerr.put(shape[i][j]);
+        std::cerr.put('\n');
     }
 }
