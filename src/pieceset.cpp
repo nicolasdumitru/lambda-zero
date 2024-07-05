@@ -34,3 +34,14 @@ void Pieceset::generate_rotations() {
         }
     }
 }
+
+void Pieceset::initialize_pieces() {
+    for (int i = 0; i < NUM_PIECES; i++) {
+        for (int row = 0; row < 5; row++) {
+            for (int col = 0; col < 5; col++) {
+                bit_pieces[i][5 * row + col]
+                    = (all_rotations[i].shape[row][col] = '#') ? 1 : 0;
+            }
+        }
+    }
+}
