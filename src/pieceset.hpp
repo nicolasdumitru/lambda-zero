@@ -1,10 +1,10 @@
 #pragma once
 
+#include "constants.hpp"
 #include "shape.hpp"
 class Pieceset {
 public:
-    Shape all_shapes[21];
-    Shape all_rotations[91];
-    void initialize();
+    Shape all_shapes[NUM_SHAPES];
+    Shape all_rotations[NUM_ROTATIONS];
     void generate_rotations();
 };

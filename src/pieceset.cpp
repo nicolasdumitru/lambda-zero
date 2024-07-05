@@ -1,15 +1,15 @@
-#include "constants.hpp"
 #include "pieceset.hpp"
+#include "constants.hpp"
 
-void Pieceset::initialize() {
-    for (int i = 0; i < 21; i++)
+void Pieceset::initialize_shapes() {
+    for (int i = 0; i < NUM_SHAPES; i++)
         all_shapes[i] = ALL_SHAPES[i];
 }
 
 void Pieceset::generate_rotations() {
     int n, m, k, i, j;
     n = 0;
-    for (i = 0; i < 21; i++) {
+    for (i = 0; i < NUM_SHAPES; i++) {
         all_rotations[n] = all_shapes[i];
         m = n;
         n++;
